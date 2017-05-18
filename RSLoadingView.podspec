@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RSLoadingView'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'A short description of RSLoadingView.'
 
 # This description is used to generate tags and improve search results.
@@ -24,17 +24,18 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/git/RSLoadingView'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'git' => 'royng@redso.com.hk' }
+  s.author           = { 'git' => 'roytornado@gmail.com' }
   s.source           = { :git => 'https://github.com/git/RSLoadingView.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'RSLoadingView/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'RSLoadingView' => ['RSLoadingView/Assets/*.png']
-  # }
+  s.resource_bundles = {
+    'RSLoadingView' => ['RSLoadingView/Assets/*']
+  }
+
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

@@ -2,10 +2,4 @@ use_frameworks!
 
 target 'RSLoadingView_Example' do
   pod 'RSLoadingView', :path => '../'
-
-  target 'RSLoadingView_Tests' do
-    inherit! :search_paths
-
-    
-  end
 end

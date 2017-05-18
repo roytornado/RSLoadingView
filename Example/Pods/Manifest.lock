@@ -1,0 +1,16 @@
+PODS:
+  - RSLoadingView (1.0.0)
+
+DEPENDENCIES:
+  - RSLoadingView (from `../`)
+
+EXTERNAL SOURCES:
+  RSLoadingView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  RSLoadingView: e468dda2258384075695a597d2a70bd84b6b2ee7
+
+PODFILE CHECKSUM: db62b954e7c8ba33ca0dbf94b52de52ead4bde93
+
+COCOAPODS: 1.2.1

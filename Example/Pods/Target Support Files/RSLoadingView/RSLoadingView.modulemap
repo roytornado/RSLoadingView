@@ -1,0 +1,6 @@
+framework module RSLoadingView {
+  umbrella header "RSLoadingView-umbrella.h"
+
+  export *
+  module * { export * }
+}

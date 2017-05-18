@@ -1,24 +1,26 @@
-//
-//  ViewController.swift
-//  RSLoadingView
-//
-//  Created by git on 05/17/2017.
-//  Copyright (c) 2017 git. All rights reserved.
-//
-
 import UIKit
+import RSLoadingView
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+  }
+  
+  @IBAction func showOnView() {
+    let loadingView = RSLoadingView()
+    loadingView.shouldTapToDismiss = true
+    loadingView.show(on: view)
+  }
+  
+  @IBAction func showOnWindow() {
+    let loadingView = RSLoadingView()
+    loadingView.shouldTapToDismiss = true
+    loadingView.variantKey = "inAndOut"
+    loadingView.speedFactor = 2.0
+    loadingView.lifeSpanFactor = 2.0
+    loadingView.mainColor = UIColor.red
+    loadingView.showOnKeyWindow()
+  }
 }
 
