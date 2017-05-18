@@ -16,6 +16,7 @@
 
 ## Demo
 SpinAlone - Base Variant
+
 <img src="./screenshots_normal.png" width="200">
 
 ## Installation
