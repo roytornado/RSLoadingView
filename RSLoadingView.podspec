@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'RSLoadingView'
   s.version          = '1.0.0'
-  s.summary          = 'A short description of RSLoadingView.'
+  s.summary          = 'Awesome loading animations using 3D engine written with Swift'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,13 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+`RSLoadingView` bring your app to the new age of loading animations using 3D engine.
+- Written with Swift
+- Customizable
+- Using Apple's SceneKit with OpenGL
+- Include HUB feature: show full screen loading HUB with one line of code
+- Or use as standalone view
+- Configurable in interface builder
                        DESC
 
   s.homepage         = 'https://github.com/git/RSLoadingView'
@@ -35,7 +41,6 @@ TODO: Add long description of the pod here.
   s.resource_bundles = {
     'RSLoadingView' => ['RSLoadingView/Assets/*']
   }
-
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

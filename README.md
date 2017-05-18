@@ -1,18 +1,20 @@
 # RSLoadingView
 
-[![CI Status](http://img.shields.io/travis/git/RSLoadingView.svg?style=flat)](https://travis-ci.org/git/RSLoadingView)
-[![Version](https://img.shields.io/cocoapods/v/RSLoadingView.svg?style=flat)](http://cocoapods.org/pods/RSLoadingView)
-[![License](https://img.shields.io/cocoapods/l/RSLoadingView.svg?style=flat)](http://cocoapods.org/pods/RSLoadingView)
-[![Platform](https://img.shields.io/cocoapods/p/RSLoadingView.svg?style=flat)](http://cocoapods.org/pods/RSLoadingView)
+## Introduction
 
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+`RSLoadingView` bring your app to the new age of loading animations using 3D engine.
+- Written with Swift
+- Customizable
+- Using Apple's SceneKit with OpenGL
+- Include HUB feature: show full screen loading HUB with one line of code
+- Or use as standalone view
+- Configurable in interface builder
 
 ## Requirements
+- Swift 3.2
+- iOS 9+
 
 ## Installation
-
 RSLoadingView is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
@@ -20,10 +22,34 @@ it, simply add the following line to your Podfile:
 pod "RSLoadingView"
 ```
 
+## Customization
+##### Loading View Related
+#
+| Field | Default Value |
+| ------ | ------ |
+| speedFactor | 1.0 |
+| mainColor | UIColor.white |
+| colorVariation | 0.0 |
+| sizeFactor | 1.0 |
+| spreadingFactor | 1.0 |
+| lifeSpanFactor | 1.0 |
+| variantKey | "" |
+##### HUB Related
+#
+| Field | Default Value |
+| ------ | ------ |
+| shouldDimBackground | true |
+| dimBackgroundColor | UIColor.black.withAlphaComponent(0.6) |
+| isBlocking | true |
+| shouldTapToDismiss | false |
+| sizeInContainer | CGSize(width: 180, height: 180) |
+
 ## Author
 
-git, royng@redso.com.hk
+Roy Ng, roytornado@gmail.com
+@ Redso, https://www.redso.com.hk/
 
 ## License
 
 RSLoadingView is available under the MIT license. See the LICENSE file for more info.
+
