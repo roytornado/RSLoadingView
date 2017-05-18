@@ -34,6 +34,12 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "RSLoadingView"
 ```
+## Supported Effect
+| Effect | Variants |
+| ------ | ------ |
+| RSLoadingSpinAlone | base, inAndOut |
+| RSLoadingTwins | (coming soon) |
+| RSLoadingTriples | (coming soon) |
 
 ## Customization
 ##### Loading View Related
