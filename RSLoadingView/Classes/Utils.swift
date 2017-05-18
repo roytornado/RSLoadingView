@@ -3,13 +3,16 @@ import SceneKit
 
 public class RSLogger {
   var tag: String
-  open var enabled = true
+  open var enabled = false
   
   init(tag: String) {
     self.tag = tag
   }
   
   public func logDebug(_ msg: String) {
+    if !enabled {
+      return
+    }
     let df = DateFormatter()
     df.dateStyle = .short
     df.timeStyle = .short
