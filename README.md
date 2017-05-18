@@ -14,6 +14,9 @@
 - Swift 3.2
 - iOS 9+
 
+## Demo
+![SpinAlone Base Variant](./screenshots_normal.png?raw=true "SpinAlone Base Variant")
+
 ## Installation
 RSLoadingView is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
@@ -24,7 +27,6 @@ pod "RSLoadingView"
 
 ## Customization
 ##### Loading View Related
-#
 | Field | Default Value |
 | ------ | ------ |
 | speedFactor | 1.0 |
@@ -35,7 +37,6 @@ pod "RSLoadingView"
 | lifeSpanFactor | 1.0 |
 | variantKey | "" |
 ##### HUB Related
-#
 | Field | Default Value |
 | ------ | ------ |
 | shouldDimBackground | true |

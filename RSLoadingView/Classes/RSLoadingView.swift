@@ -119,11 +119,13 @@ public class RSLoadingView: UIView, SCNSceneRendererDelegate {
   }
   
   func loadParticleImage(name: String) -> UIImage? {
-    let bundle = Bundle(for: RSLoadingView.self)
-    if let image = UIImage(named: name, in: bundle, compatibleWith: nil) {
+    let frameworkBundle = Bundle(for: RSLoadingView.self)
+    let bundleURL = frameworkBundle.url(forResource: "RSLoadingView", withExtension: "bundle")!
+    let resourceBundle = Bundle(url: bundleURL)!
+    if let image = UIImage(named: name, in: resourceBundle, compatibleWith: nil) {
       return image
     } else {
-      logger.logDebug("Can't load particleImage \(name) at \(bundleResourcePath)")
+      logger.logDebug("Can't load particleImage \(name) at \(resourceBundle.bundlePath)")
       return nil
     }
   }
