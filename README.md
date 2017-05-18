@@ -16,7 +16,7 @@
 
 ## Demo
 SpinAlone - Base Variant
-![SpinAlone Base Variant](./screenshots_normal.png =250x)
+<img src="./screenshots_normal.png" width="200">
 
 ## Installation
 RSLoadingView is available through [CocoaPods](http://cocoapods.org). To install
