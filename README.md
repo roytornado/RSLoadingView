@@ -34,6 +34,26 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "RSLoadingView"
 ```
+
+## Usage
+```
+import UIKit
+import RSLoadingView
+
+class ViewController: UIViewController {
+
+@IBAction func showLoadingHub() {
+let loadingView = RSLoadingView()
+loadingView.show(on: view)
+}
+
+func hideLoadingHub() {
+RSLoadingView.hide(from: view)
+}
+}
+
+```
+
 ## Supported Effect
 | Effect | Variants |
 | ------ | ------ |
