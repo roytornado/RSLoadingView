@@ -15,9 +15,17 @@
 - iOS 9+
 
 ## Demo
-SpinAlone - Base Variant
+SpinAlone - `base` Variant
 
 <img src="./screenshots_normal.png" width="200">
+
+SpinAlone - `base` Variant
+
+<img src="./gif_normal.gif" width="200">
+
+SpinAlone - `inAndOut` Variant; speedFactor = 2.0; lifeSpanFactor = 2.0; mainColor = UIColor.red
+
+<img src="./gif_inout.gif" width="200">
 
 ## Installation
 RSLoadingView is available through [CocoaPods](http://cocoapods.org). To install
