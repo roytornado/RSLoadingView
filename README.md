@@ -15,7 +15,8 @@
 - iOS 9+
 
 ## Demo
-![SpinAlone Base Variant](./screenshots_normal.png?raw=true "SpinAlone Base Variant")
+SpinAlone - Base Variant
+![SpinAlone Base Variant](./screenshots_normal.png "SpinAlone Base Variant")
 
 ## Installation
 RSLoadingView is available through [CocoaPods](http://cocoapods.org). To install
