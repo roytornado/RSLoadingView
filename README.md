@@ -42,14 +42,23 @@ import RSLoadingView
 
 class ViewController: UIViewController {
 
-@IBAction func showLoadingHub() {
-let loadingView = RSLoadingView()
-loadingView.show(on: view)
-}
+  @IBAction func showLoadingHub() {
+    let loadingView = RSLoadingView()
+    loadingView.show(on: view)
+  }
 
-func hideLoadingHub() {
-RSLoadingView.hide(from: view)
-}
+  func hideLoadingHub() {
+    RSLoadingView.hide(from: view)
+  }
+
+  @IBAction func showOnWindow() {
+    let loadingView = RSLoadingView()
+    loadingView.showOnKeyWindow()
+  }
+
+  func hideLoadingHubFromKeyWindow() {
+    RSLoadingView.hideFromKeyWindow()
+  }
 }
 
 ```

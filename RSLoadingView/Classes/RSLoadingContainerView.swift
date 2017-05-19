@@ -1,7 +1,12 @@
 import Foundation
 
 internal class RSLoadingContainerView: UIView {
-  internal let loadingView: RSLoadingView
+  let logger = RSLogger(tag: "RSLoadingContainerView")
+  internal var loadingView: RSLoadingView!
+  
+  deinit {
+    logger.logDebug("deinit")
+  }
   
   internal init(loadingView: RSLoadingView) {
     self.loadingView = loadingView
@@ -16,6 +21,7 @@ internal class RSLoadingContainerView: UIView {
   }
   
   fileprivate func setup() {
+    logger.logDebug("setup")
     if loadingView.shouldDimBackground {
       backgroundColor = loadingView.dimBackgroundColor
     } else {
@@ -29,5 +35,12 @@ internal class RSLoadingContainerView: UIView {
     loadingView.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
     loadingView.widthAnchor.constraint(equalToConstant: loadingView.sizeInContainer.width).isActive = true
     loadingView.heightAnchor.constraint(equalToConstant: loadingView.sizeInContainer.height).isActive = true
+  }
+  
+  internal func free() {
+    logger.logDebug("free")
+    removeFromSuperview()
+    loadingView.removeFromSuperview()
+    loadingView = nil
   }
 }

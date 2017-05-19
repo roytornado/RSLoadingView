@@ -40,6 +40,10 @@ public class RSLoadingView: UIView, SCNSceneRendererDelegate {
   public var shouldTapToDismiss = false
   public var sizeInContainer: CGSize = CGSize(width: 180, height: 180)
   
+  deinit {
+    logger.logDebug("deinit")
+  }
+  
   init(effect: RSLoadingViewEffect? = nil) {
     super.init(frame: CGRect.zero)
   }
@@ -59,6 +63,7 @@ public class RSLoadingView: UIView, SCNSceneRendererDelegate {
   }
   
   open func setup() {
+    logger.logDebug("setup")
     scnView = SCNView(frame: CGRect.zero, options: [SCNView.Option.preferredRenderingAPI.rawValue: NSNumber(value: 1)])
     scnView.delegate = self
     addSubview(scnView)
@@ -196,7 +201,7 @@ public class RSLoadingView: UIView, SCNSceneRendererDelegate {
       UIView.animate(withDuration: 0.3, animations: { 
         containerView.alpha = 0.0
       }, completion: { _ in
-        containerView.removeFromSuperview()
+        containerView.free()
       })
     }
   }
