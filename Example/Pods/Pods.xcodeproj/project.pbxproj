@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16231FD1BA32D309ADC2601671848091 /* RSLoadingContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2CC161E4799E05ADED00B41FDA66B7 /* RSLoadingContainerView.swift */; };
+		19A184C4AFE4BAF9E35E21111164FDDF /* RSLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E35F9A2004C0E6E8F7FFD7D3325D909 /* RSLoadingView.swift */; };
 		21D8809264722CF21987F8DF2A42F718 /* Pods-RSLoadingView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 32F78B528B6A5F11E17B532B78ACE46B /* Pods-RSLoadingView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2AC81A9ACEB78E5F8398218D754E0124 /* SpinAlone.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D5BCD5E0436052591D5BAABF40D45EC /* SpinAlone.png */; };
 		2C7EF323A3B248D78F4091DF9649DAB7 /* RSLoadingView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 28EB101C7D07AB7A39F887556B3D0E1D /* RSLoadingView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3B4303B860FCA35B21755BA93C61F564 /* RSLoadingView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7804A3C894F0821754D714E9493BD869 /* RSLoadingView.bundle */; };
-		3BBB0BE66EBD719444D5E90BD8930719 /* RSLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDF962ABCCCFC316AA94C0975E50079 /* RSLoadingView.swift */; };
 		3DADAB4463F3AB2282D834F02109AB0A /* Pods-RSLoadingView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1C5632035971FA4DA9F470BD0EC4F0 /* Pods-RSLoadingView_Example-dummy.m */; };
-		45D545F0CD58E913CCC423FF7A872EAE /* SpinAlone.scnp in Resources */ = {isa = PBXBuildFile; fileRef = 1047B0736CE48F1C4705D0983FE5196D /* SpinAlone.scnp */; };
-		56F837201ECD7F6800C65349 /* RSLoadingContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F8371F1ECD7F6800C65349 /* RSLoadingContainerView.swift */; };
+		4E1FAD2DA4A03B8F2D4361B78CCBA2F4 /* RSLoadingView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B188829A9BA4F08ACFD7F290483F6A2E /* RSLoadingView-dummy.m */; };
 		6847D7DA35E418BB5521E2F1A414EC4F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		78DFC0A756DA835008EC8FA95F490285 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2C6D779006F10529BEE72A5612D079 /* Utils.swift */; };
+		7844130787A5E7ECA987CAC7003AA4C7 /* SpinAlone.scnp in Resources */ = {isa = PBXBuildFile; fileRef = 01A49AF13C992A09773B59BF24D84BC8 /* SpinAlone.scnp */; };
 		943C91CBD355DCC6B73FF81BA3A07B4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		BB1607B4E5244BCA171CC2CB0944EED0 /* RSLoadingView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B188829A9BA4F08ACFD7F290483F6A2E /* RSLoadingView-dummy.m */; };
-		D5E4DA03F112B639530EA28E34AE0A87 /* RSLoadingSpinAlone.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE083D4F159938C04ED347DFFEB6053 /* RSLoadingSpinAlone.swift */; };
-		FBF0DFC05E3623E78577C79BAF9C8C97 /* SpinAlone.png in Resources */ = {isa = PBXBuildFile; fileRef = 480C641488AE48D3C20A75E32281E094 /* SpinAlone.png */; };
+		CF3DC3FF61796BBAE5220F4A8025DCF8 /* RSLoadingSpinAlone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E217F81A10045B44E405BBB950869A0 /* RSLoadingSpinAlone.swift */; };
+		D6E578550ACAFDD2FFE46FF36D73208F /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D51D0705481984CAEF763B1F20D0E1 /* Utils.swift */; };
+		EACA77092AB06CA156CF9FC2518B9B31 /* RSLoadingTwins.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7281F2DEAAC9012F33B687565FDAD7D /* RSLoadingTwins.swift */; };
+		FA61CFB2F5709F55E1F8A9B4ABA62F4B /* Twins.scnp in Resources */ = {isa = PBXBuildFile; fileRef = 4314553E55E987310F786607A1CEE6D0 /* Twins.scnp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,33 +43,35 @@
 
 /* Begin PBXFileReference section */
 		0103A56906837EA11A492DF7AD8EA875 /* Pods-RSLoadingView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RSLoadingView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		01A49AF13C992A09773B59BF24D84BC8 /* SpinAlone.scnp */ = {isa = PBXFileReference; includeInIndex = 1; path = SpinAlone.scnp; sourceTree = "<group>"; };
 		02371BC228EA49781A87D33FB26F22AE /* RSLoadingView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RSLoadingView-prefix.pch"; sourceTree = "<group>"; };
 		047BA065FFB0BAA12FD4D47F5DCD4633 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0A4A1DF2089577C91938CE26E37298EC /* RSLoadingView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RSLoadingView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A4A1DF2089577C91938CE26E37298EC /* RSLoadingView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RSLoadingView.framework; path = RSLoadingView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E1C5632035971FA4DA9F470BD0EC4F0 /* Pods-RSLoadingView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RSLoadingView_Example-dummy.m"; sourceTree = "<group>"; };
-		1047B0736CE48F1C4705D0983FE5196D /* SpinAlone.scnp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.scp; path = SpinAlone.scnp; sourceTree = "<group>"; };
-		1F2C6D779006F10529BEE72A5612D079 /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
-		224606B2610291C6827ED853963FC0A3 /* Pods-RSLoadingView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RSLoadingView_Example.modulemap"; sourceTree = "<group>"; };
+		224606B2610291C6827ED853963FC0A3 /* Pods-RSLoadingView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-RSLoadingView_Example.modulemap"; sourceTree = "<group>"; };
 		269288C8DFF1CD5078173A3AFDD9B2E6 /* Pods-RSLoadingView_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RSLoadingView_Example-resources.sh"; sourceTree = "<group>"; };
 		28EB101C7D07AB7A39F887556B3D0E1D /* RSLoadingView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RSLoadingView-umbrella.h"; sourceTree = "<group>"; };
 		32F78B528B6A5F11E17B532B78ACE46B /* Pods-RSLoadingView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RSLoadingView_Example-umbrella.h"; sourceTree = "<group>"; };
 		3865032AADC51B831B9538725BD20421 /* Pods-RSLoadingView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RSLoadingView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		480C641488AE48D3C20A75E32281E094 /* SpinAlone.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = SpinAlone.png; sourceTree = "<group>"; };
-		56F8371F1ECD7F6800C65349 /* RSLoadingContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSLoadingContainerView.swift; sourceTree = "<group>"; };
-		5AFD6B134B2E5863456451235D72C78C /* Pods_RSLoadingView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RSLoadingView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4314553E55E987310F786607A1CEE6D0 /* Twins.scnp */ = {isa = PBXFileReference; includeInIndex = 1; path = Twins.scnp; sourceTree = "<group>"; };
+		4E2CC161E4799E05ADED00B41FDA66B7 /* RSLoadingContainerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RSLoadingContainerView.swift; sourceTree = "<group>"; };
+		56D51D0705481984CAEF763B1F20D0E1 /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		5AFD6B134B2E5863456451235D72C78C /* Pods_RSLoadingView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RSLoadingView_Example.framework; path = "Pods-RSLoadingView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		61045AC2CA5D34B25669E6C2388715DD /* ResourceBundle-RSLoadingView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-RSLoadingView-Info.plist"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6B68FD3BE2BC0FF28299CDF15441AC15 /* Pods-RSLoadingView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RSLoadingView_Example-frameworks.sh"; sourceTree = "<group>"; };
-		7804A3C894F0821754D714E9493BD869 /* RSLoadingView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSLoadingView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E217F81A10045B44E405BBB950869A0 /* RSLoadingSpinAlone.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RSLoadingSpinAlone.swift; sourceTree = "<group>"; };
+		6E35F9A2004C0E6E8F7FFD7D3325D909 /* RSLoadingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RSLoadingView.swift; sourceTree = "<group>"; };
+		7804A3C894F0821754D714E9493BD869 /* RSLoadingView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = RSLoadingView.bundle; path = RSLoadingView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		79CD095FFBC43DE7A51EA5E3AA2FC723 /* Pods-RSLoadingView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RSLoadingView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		7A331B89F8B09E84A987B210C189C2A2 /* RSLoadingView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RSLoadingView.xcconfig; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8D5BCD5E0436052591D5BAABF40D45EC /* SpinAlone.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = SpinAlone.png; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B188829A9BA4F08ACFD7F290483F6A2E /* RSLoadingView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RSLoadingView-dummy.m"; sourceTree = "<group>"; };
-		BFE083D4F159938C04ED347DFFEB6053 /* RSLoadingSpinAlone.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RSLoadingSpinAlone.swift; sourceTree = "<group>"; };
+		C7281F2DEAAC9012F33B687565FDAD7D /* RSLoadingTwins.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RSLoadingTwins.swift; sourceTree = "<group>"; };
 		D2A67AC795C7B0730CB7A5E3D47373AC /* Pods-RSLoadingView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RSLoadingView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D7B8588B6FE150C428991138E55E2D8C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DBDF962ABCCCFC316AA94C0975E50079 /* RSLoadingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RSLoadingView.swift; sourceTree = "<group>"; };
-		DE97374937808C408B3BFD4726E243D1 /* RSLoadingView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = RSLoadingView.modulemap; sourceTree = "<group>"; };
+		DE97374937808C408B3BFD4726E243D1 /* RSLoadingView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = RSLoadingView.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BF6D649C7E1C5E97DDF4C3B0C647048 /* RSLoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				4A0B5F0E3F20E8E14BC940EB930830F9 /* Classes */,
+			);
+			name = RSLoadingView;
+			path = RSLoadingView;
+			sourceTree = "<group>";
+		};
 		2E85AECB822B54C2E70A9CA833736BF7 /* Pods-RSLoadingView_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +128,19 @@
 			path = "Target Support Files/Pods-RSLoadingView_Example";
 			sourceTree = "<group>";
 		};
+		4A0B5F0E3F20E8E14BC940EB930830F9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4E2CC161E4799E05ADED00B41FDA66B7 /* RSLoadingContainerView.swift */,
+				6E217F81A10045B44E405BBB950869A0 /* RSLoadingSpinAlone.swift */,
+				C7281F2DEAAC9012F33B687565FDAD7D /* RSLoadingTwins.swift */,
+				6E35F9A2004C0E6E8F7FFD7D3325D909 /* RSLoadingView.swift */,
+				56D51D0705481984CAEF763B1F20D0E1 /* Utils.swift */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		4ED73B7E88015968859771A57C98F3F7 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,31 +156,23 @@
 			path = "Example/Pods/Target Support Files/RSLoadingView";
 			sourceTree = "<group>";
 		};
-		4EF4E92300692CFDFC883EC3D55272FF /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				56F8371F1ECD7F6800C65349 /* RSLoadingContainerView.swift */,
-				BFE083D4F159938C04ED347DFFEB6053 /* RSLoadingSpinAlone.swift */,
-				DBDF962ABCCCFC316AA94C0975E50079 /* RSLoadingView.swift */,
-				1F2C6D779006F10529BEE72A5612D079 /* Utils.swift */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		545794E6F5C2EEFF6114AE41F7DFD211 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D885A9BB9D25D272F810CCD87E505F4C /* RSLoadingView */,
+				A8D605A9B5B4F35D84DA606C1B2D2E20 /* RSLoadingView */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		6B40F20F89AB8D3722200D1633EFEDC6 /* RSLoadingView */ = {
+		5EEDE3C5E2799B8538A3B59455D32631 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				4EF4E92300692CFDFC883EC3D55272FF /* Classes */,
+				8D5BCD5E0436052591D5BAABF40D45EC /* SpinAlone.png */,
+				01A49AF13C992A09773B59BF24D84BC8 /* SpinAlone.scnp */,
+				4314553E55E987310F786607A1CEE6D0 /* Twins.scnp */,
 			);
-			path = RSLoadingView;
+			name = Assets;
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -174,6 +192,15 @@
 				2E85AECB822B54C2E70A9CA833736BF7 /* Pods-RSLoadingView_Example */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A8D605A9B5B4F35D84DA606C1B2D2E20 /* RSLoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				5EEDE3C5E2799B8538A3B59455D32631 /* Assets */,
+			);
+			name = RSLoadingView;
+			path = RSLoadingView;
 			sourceTree = "<group>";
 		};
 		AF12CFB1F46FD0C7754EB9EAAFB56D4D /* Products */ = {
@@ -202,14 +229,6 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		D885A9BB9D25D272F810CCD87E505F4C /* RSLoadingView */ = {
-			isa = PBXGroup;
-			children = (
-				F9305A355F78DD53BCC34488613BFDFC /* Assets */,
-			);
-			path = RSLoadingView;
-			sourceTree = "<group>";
-		};
 		EF069F72BA1B2834E40E81C6668651BC /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -218,20 +237,11 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		F9305A355F78DD53BCC34488613BFDFC /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				480C641488AE48D3C20A75E32281E094 /* SpinAlone.png */,
-				1047B0736CE48F1C4705D0983FE5196D /* SpinAlone.scnp */,
-			);
-			path = Assets;
-			sourceTree = "<group>";
-		};
 		F972024E53B0812B9E21CA8D0D98EBDD /* RSLoadingView */ = {
 			isa = PBXGroup;
 			children = (
 				545794E6F5C2EEFF6114AE41F7DFD211 /* Resources */,
-				6B40F20F89AB8D3722200D1633EFEDC6 /* RSLoadingView */,
+				0BF6D649C7E1C5E97DDF4C3B0C647048 /* RSLoadingView */,
 				4ED73B7E88015968859771A57C98F3F7 /* Support Files */,
 			);
 			name = RSLoadingView;
@@ -264,7 +274,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE04D96118FF5459596CC5D7265E5105 /* Build configuration list for PBXNativeTarget "RSLoadingView" */;
 			buildPhases = (
-				C670BF620679DA64E8A310E1D9DE6CC4 /* Sources */,
+				12BED1D077E7828520D666FB977915A2 /* Sources */,
 				D0E4F0CBD0ED3D89B5C5E124B23A8D25 /* Frameworks */,
 				9CCC56C23BB332FFAA76894BC6EFE4C4 /* Resources */,
 				44BE14EAEEC59A43752A28142DA6D053 /* Headers */,
@@ -303,7 +313,7 @@
 			buildPhases = (
 				972D1BAB88E9C87E3DACD3971CF05A59 /* Sources */,
 				4BAB37571D3321278C13202B59C8997D /* Frameworks */,
-				9E62DEABC6C8CB10D887FA3C9A5EF9FA /* Resources */,
+				A00571FF760576241647FB08CC18DFDB /* Resources */,
 			);
 			buildRules = (
 			);
@@ -351,34 +361,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9E62DEABC6C8CB10D887FA3C9A5EF9FA /* Resources */ = {
+		A00571FF760576241647FB08CC18DFDB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBF0DFC05E3623E78577C79BAF9C8C97 /* SpinAlone.png in Resources */,
-				45D545F0CD58E913CCC423FF7A872EAE /* SpinAlone.scnp in Resources */,
+				2AC81A9ACEB78E5F8398218D754E0124 /* SpinAlone.png in Resources */,
+				7844130787A5E7ECA987CAC7003AA4C7 /* SpinAlone.scnp in Resources */,
+				FA61CFB2F5709F55E1F8A9B4ABA62F4B /* Twins.scnp in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		12BED1D077E7828520D666FB977915A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16231FD1BA32D309ADC2601671848091 /* RSLoadingContainerView.swift in Sources */,
+				CF3DC3FF61796BBAE5220F4A8025DCF8 /* RSLoadingSpinAlone.swift in Sources */,
+				EACA77092AB06CA156CF9FC2518B9B31 /* RSLoadingTwins.swift in Sources */,
+				4E1FAD2DA4A03B8F2D4361B78CCBA2F4 /* RSLoadingView-dummy.m in Sources */,
+				19A184C4AFE4BAF9E35E21111164FDDF /* RSLoadingView.swift in Sources */,
+				D6E578550ACAFDD2FFE46FF36D73208F /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		972D1BAB88E9C87E3DACD3971CF05A59 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C670BF620679DA64E8A310E1D9DE6CC4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D5E4DA03F112B639530EA28E34AE0A87 /* RSLoadingSpinAlone.swift in Sources */,
-				BB1607B4E5244BCA171CC2CB0944EED0 /* RSLoadingView-dummy.m in Sources */,
-				3BBB0BE66EBD719444D5E90BD8930719 /* RSLoadingView.swift in Sources */,
-				56F837201ECD7F6800C65349 /* RSLoadingContainerView.swift in Sources */,
-				78DFC0A756DA835008EC8FA95F490285 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

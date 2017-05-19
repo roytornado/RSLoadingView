@@ -27,6 +27,10 @@ SpinAlone - `inAndOut` Variant; speedFactor = 2.0; lifeSpanFactor = 2.0; mainCol
 
 <img src="./gif_inout.gif" width="200">
 
+Twins - `base` Variant
+
+<img src="./gif_twins.gif" width="200">
+
 ## Installation
 RSLoadingView is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
@@ -44,6 +48,11 @@ class ViewController: UIViewController {
 
   @IBAction func showLoadingHub() {
     let loadingView = RSLoadingView()
+    loadingView.show(on: view)
+  }
+
+  @IBAction func showOnViewTwins() {
+    let loadingView = RSLoadingView(effectType: RSLoadingView.Effect.twins)
     loadingView.show(on: view)
   }
 
@@ -67,7 +76,7 @@ class ViewController: UIViewController {
 | Effect | Variants |
 | ------ | ------ |
 | RSLoadingSpinAlone | base, inAndOut |
-| RSLoadingTwins | (coming soon) |
+| RSLoadingTwins | base |
 | RSLoadingTriples | (coming soon) |
 
 ## Customization
@@ -94,6 +103,8 @@ class ViewController: UIViewController {
 
 Roy Ng, roytornado@gmail.com
 @ Redso, https://www.redso.com.hk/
+
+Linkedin: https://www.linkedin.com/in/roy-ng-19427735/
 
 ## License
 

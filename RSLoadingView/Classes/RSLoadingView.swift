@@ -10,6 +10,10 @@ protocol RSLoadingViewEffect {
 
 public class RSLoadingView: UIView, SCNSceneRendererDelegate {
   
+  public enum Effect: String {
+    case spinAlone, twins
+  }
+  
   @IBInspectable public var speedFactor: CGFloat = 1.0
   @IBInspectable public var mainColor: UIColor = UIColor.white
   @IBInspectable public var colorVariation: CGFloat = 0.0
@@ -44,8 +48,19 @@ public class RSLoadingView: UIView, SCNSceneRendererDelegate {
     logger.logDebug("deinit")
   }
   
-  init(effect: RSLoadingViewEffect? = nil) {
+  public init(effectType: Effect? = nil) {
+    if let effectType = effectType {
+      switch effectType {
+      case .spinAlone:
+        effect = RSLoadingSpinAlone()
+        break
+      case .twins:
+        effect = RSLoadingTwins()
+        break
+      }
+    }
     super.init(frame: CGRect.zero)
+    setup()
   }
   
   public override init(frame: CGRect) {
@@ -198,7 +213,7 @@ public class RSLoadingView: UIView, SCNSceneRendererDelegate {
   
   fileprivate func hideContainerView() {
     if let containerView = containerView {
-      UIView.animate(withDuration: 0.3, animations: { 
+      UIView.animate(withDuration: 0.3, animations: {
         containerView.alpha = 0.0
       }, completion: { _ in
         containerView.free()

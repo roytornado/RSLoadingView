@@ -1,5 +1,5 @@
 PODS:
-  - RSLoadingView (1.0.0)
+  - RSLoadingView (1.0.1)
 
 DEPENDENCIES:
   - RSLoadingView (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  RSLoadingView: e468dda2258384075695a597d2a70bd84b6b2ee7
+  RSLoadingView: 359096c5b20ac49a8d67cd9b1505093130099e2d
 
 PODFILE CHECKSUM: db62b954e7c8ba33ca0dbf94b52de52ead4bde93
 

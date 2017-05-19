@@ -13,6 +13,12 @@ class ViewController: UIViewController {
     loadingView.show(on: view)
   }
   
+  @IBAction func showOnViewTwins() {
+    let loadingView = RSLoadingView(effectType: RSLoadingView.Effect.twins)
+    loadingView.shouldTapToDismiss = true
+    loadingView.show(on: view)
+  }
+  
   @IBAction func showOnWindow() {
     let loadingView = RSLoadingView()
     loadingView.shouldTapToDismiss = true
