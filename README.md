@@ -40,7 +40,7 @@ pod "RSLoadingView"
 ```
 
 ## Usage
-```
+```swift
 import UIKit
 import RSLoadingView
 
@@ -68,6 +68,7 @@ class ViewController: UIViewController {
   func hideLoadingHubFromKeyWindow() {
     RSLoadingView.hideFromKeyWindow()
   }
+  
 }
 
 ```
