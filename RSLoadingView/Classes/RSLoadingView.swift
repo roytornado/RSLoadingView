@@ -197,7 +197,7 @@ public class RSLoadingView: UIView, SCNSceneRendererDelegate {
     }
   }
   
-  open func hide() {
+  @objc open func hide() {
     hideContainerView()
   }
   
