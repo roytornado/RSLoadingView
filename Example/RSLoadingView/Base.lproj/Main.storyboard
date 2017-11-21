@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -27,7 +29,7 @@
                                 <rect key="frame" x="20" y="20" width="335" height="627"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="GIu-ns-5Jz">
-                                        <rect key="frame" x="0.0" y="80" width="335" height="469.5"/>
+                                        <rect key="frame" x="0.0" y="80" width="335" height="527.5"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redso_logo_type02.png" translatesAutoresizingMaskIntoConstraints="NO" id="efL-mQ-oGv">
                                                 <rect key="frame" x="0.0" y="0.0" width="335" height="80"/>
@@ -86,6 +88,17 @@ A social mobile solution company</string>
                                                     <action selector="showOnWindow" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Nzt-y8-pxF"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xLl-ZD-ATY">
+                                                <rect key="frame" x="0.0" y="493.5" width="335" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                <state key="normal" title="Show on table view">
+                                                    <color key="titleColor" red="0.92549019610000005" green="0.1450980392" blue="0.1647058824" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="showOnWindow" destination="vXZ-lx-hvc" eventType="touchUpInside" id="NSw-KZ-z00"/>
+                                                    <segue destination="Q0n-Ea-W5b" kind="presentation" id="FCs-J0-YQJ"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
@@ -113,6 +126,55 @@ A social mobile solution company</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Table View Demo View Controller-->
+        <scene sceneID="nOw-qT-u3E">
+            <objects>
+                <viewController id="Q0n-Ea-W5b" customClass="TableViewDemoViewController" customModule="RSLoadingView_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lMh-IU-Oyg"/>
+                        <viewControllerLayoutGuide type="bottom" id="XS0-p6-DdY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rCb-ws-8ln">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jmI-Hz-bjb">
+                                <rect key="frame" x="48" y="108" width="279" height="527"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Q0n-Ea-W5b" id="MP5-K0-51p"/>
+                                    <outlet property="delegate" destination="Q0n-Ea-W5b" id="VvV-Ij-EiW"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3a3-nl-HG5">
+                                <rect key="frame" x="288" y="60" width="39" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Frb-GY-9gC"/>
+                                </constraints>
+                                <state key="normal" title="Close"/>
+                                <connections>
+                                    <action selector="close" destination="Q0n-Ea-W5b" eventType="touchUpInside" id="7zB-Wc-H6y"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="jmI-Hz-bjb" secondAttribute="trailing" constant="32" id="2D7-ru-sAv"/>
+                            <constraint firstAttribute="trailing" secondItem="3a3-nl-HG5" secondAttribute="trailing" constant="48" id="ex2-qD-2C7"/>
+                            <constraint firstItem="3a3-nl-HG5" firstAttribute="top" secondItem="rCb-ws-8ln" secondAttribute="top" constant="60" id="nzE-N0-20y"/>
+                            <constraint firstItem="XS0-p6-DdY" firstAttribute="top" secondItem="jmI-Hz-bjb" secondAttribute="bottom" constant="32" id="r1o-Mw-ldX"/>
+                            <constraint firstItem="jmI-Hz-bjb" firstAttribute="top" secondItem="3a3-nl-HG5" secondAttribute="bottom" constant="8" id="sFU-FI-V6T"/>
+                            <constraint firstItem="jmI-Hz-bjb" firstAttribute="leading" secondItem="rCb-ws-8ln" secondAttribute="leadingMargin" constant="32" id="scp-Bz-Amh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="jmI-Hz-bjb" id="K3l-cT-1dd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iah-ll-3R5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1034" y="134"/>
         </scene>
     </scenes>
     <resources>

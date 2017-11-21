@@ -167,8 +167,12 @@ public class RSLoadingView: UIView, SCNSceneRendererDelegate {
     scnView.backgroundColor = backgroundColor
     containerView = RSLoadingContainerView(loadingView: self)
     if let containerView = containerView {
-      view.addSubview(containerView)
       containerView.translatesAutoresizingMaskIntoConstraints = false
+      if let view = view as? UIScrollView, let superView = view.superview {
+        superView.addSubview(containerView)
+      } else {
+        view.addSubview(containerView)
+      }
       containerView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
       containerView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
       containerView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
