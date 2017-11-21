@@ -20,15 +20,13 @@ class ViewController: UIViewController {
   }
   
   @IBAction func showOnWindow() {
-    RSLoadingView.hideFromKeyWindow()
-    /*
     let loadingView = RSLoadingView()
     loadingView.shouldTapToDismiss = true
     loadingView.variantKey = "inAndOut"
     loadingView.speedFactor = 2.0
     loadingView.lifeSpanFactor = 2.0
-    loadingView.mainColor = UIColor.white
-    loadingView.showOnKeyWindow()*/
+    loadingView.mainColor = UIColor.red
+    loadingView.showOnKeyWindow()
   }
 }
 

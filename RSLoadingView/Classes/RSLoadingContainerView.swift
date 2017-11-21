@@ -39,8 +39,8 @@ internal class RSLoadingContainerView: UIView {
   
   internal func free() {
     logger.logDebug("free")
-    removeFromSuperview()
-    loadingView.removeFromSuperview()
+    if let _ = superview { removeFromSuperview() }
+    if let loadingView = loadingView { loadingView.removeFromSuperview() }
     loadingView = nil
   }
 }

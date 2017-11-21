@@ -95,8 +95,7 @@ A social mobile solution company</string>
                                                     <color key="titleColor" red="0.92549019610000005" green="0.1450980392" blue="0.1647058824" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="showOnWindow" destination="vXZ-lx-hvc" eventType="touchUpInside" id="NSw-KZ-z00"/>
-                                                    <segue destination="Q0n-Ea-W5b" kind="presentation" id="FCs-J0-YQJ"/>
+                                                    <segue destination="Q0n-Ea-W5b" kind="presentation" identifier="TableViewDemo" id="FCs-J0-YQJ"/>
                                                 </connections>
                                             </button>
                                         </subviews>
