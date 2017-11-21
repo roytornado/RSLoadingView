@@ -11,7 +11,7 @@
 - Configurable in interface builder
 
 ## Requirements
-- Swift 3.2
+- Swift 4.0
 - iOS 9+
 
 ## Demo
