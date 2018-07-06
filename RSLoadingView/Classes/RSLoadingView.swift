@@ -99,16 +99,19 @@ public class RSLoadingView: UIView, SCNSceneRendererDelegate {
   }
   
   open func prepareForResize() {
-    logger.logDebug("prepareForResize Size: \(bounds.size)")
+    let size = sizeInContainer
+    logger.logDebug("prepareForResize Size: \(size)")
     let pointZero = scnView.projectPoint(SCNVector3Zero)
     let pointOne = scnView.projectPoint(SCNVector3Make(1, 0, 0))
     pixelPerUnit = pointOne.x - pointZero.x
     topLeftPoint = scnView.unprojectPoint(SCNVector3Make(0, 0, pointZero.z))
-    topRightPoint = scnView.unprojectPoint(SCNVector3Make(bounds.size.width.asFloat, 0, pointZero.z))
-    bottomLeftPoint = scnView.unprojectPoint(SCNVector3Make(0, bounds.size.height.asFloat, pointZero.z))
-    bottomRightPoint = scnView.unprojectPoint(SCNVector3Make(bounds.size.width.asFloat, bounds.size.height.asFloat, pointZero.z))
-    widthInUnit = topRightPoint.x * 2
-    heightInUnit = topRightPoint.y * 2
+    topRightPoint = scnView.unprojectPoint(SCNVector3Make(size.width.asFloat, 0, pointZero.z))
+    bottomLeftPoint = scnView.unprojectPoint(SCNVector3Make(0, size.height.asFloat, pointZero.z))
+    bottomRightPoint = scnView.unprojectPoint(SCNVector3Make(size.width.asFloat, size.height.asFloat, pointZero.z))
+    widthInUnit = size.width.asFloat / pixelPerUnit
+    heightInUnit = size.height.asFloat / pixelPerUnit
+    logger.logDebug("pointZero \(pointZero)")
+    logger.logDebug("pointOne \(pointOne)")
     logger.logDebug("pixelPerUnit \(pixelPerUnit)")
     logger.logDebug("topLeftPoint \(topLeftPoint)")
     logger.logDebug("topRightPoint \(topRightPoint)")

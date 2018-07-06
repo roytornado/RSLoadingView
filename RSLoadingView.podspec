@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RSLoadingView'
-  s.version          = '1.1.2'
+  s.version          = '1.1.3'
   s.summary          = 'Awesome loading animations using 3D engine written with Swift'
 
 # This description is used to generate tags and improve search results.
