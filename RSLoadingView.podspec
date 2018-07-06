@@ -36,6 +36,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '9.0'
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
+  s.swift_version = '4.0'
   s.source_files = 'RSLoadingView/Classes/**/*'
   
   s.resource_bundles = {
